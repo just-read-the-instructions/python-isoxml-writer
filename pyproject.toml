@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"isoxml_writer.ISOXML_schema" = ["*.xsd"]
+
+[project]
+name = "isoxml_writer"
+version = "0.0.1"
+authors = [
+  { name="just-read-the-instructions", email="bla@imperius.cloud" },
+]
+description = "Create ISO11783 Taskdata"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+dependencies = [ "lxml" ]
+
+[project.urls]
+Homepage = "https://github.com/just-read-the-instructions/python-isoxml-writer"

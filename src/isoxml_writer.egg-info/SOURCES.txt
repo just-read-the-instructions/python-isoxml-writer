@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+src/isoxml_writer/__init__.py
+src/isoxml_writer/ddi.py
+src/isoxml_writer/isoxml.py
+src/isoxml_writer.egg-info/PKG-INFO
+src/isoxml_writer.egg-info/SOURCES.txt
+src/isoxml_writer.egg-info/dependency_links.txt
+src/isoxml_writer.egg-info/requires.txt
+src/isoxml_writer.egg-info/top_level.txt
+src/isoxml_writer/ISOXML_schema/ISO11783_Common_V4-3.xsd
+src/isoxml_writer/ISOXML_schema/ISO11783_ExternalFile_V4-3.xsd
+src/isoxml_writer/ISOXML_schema/ISO11783_LinkListFile_V4-3.xsd
+src/isoxml_writer/ISOXML_schema/ISO11783_TaskFile_V4-3.xsd
+src/isoxml_writer/ISOXML_schema/ISO11783_TimeLog_V4-3.xsd

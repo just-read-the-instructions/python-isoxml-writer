@@ -67,6 +67,12 @@ class Partfield:
     def add_guidance_group(self, guidance_group):
         self.et.append(guidance_group.et)
 
+    def set_customer(self, customer):
+        self.et.set("E", customer.id)
+
+    def set_farm(self, farm):
+        self.et.set("F", farm.id)
+
 
 
 class Polygon:

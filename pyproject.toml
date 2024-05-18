@@ -10,7 +10,7 @@ where = ["src"]
 
 [project]
 name = "isoxml_writer"
-version = "0.0.2"
+version = "0.0.3"
 authors = [
   { name="just-read-the-instructions", email="bla@imperius.cloud" },
 ]

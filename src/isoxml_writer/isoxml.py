@@ -31,6 +31,9 @@ class Taskdata:
 
     def add_customer(self, customer):
         self.et.append(customer.et)
+
+    def add_worker(self, worker):
+        self.et.append(worker.et)
     
     def get_taskdata(self):
         xml_string = ET.tostring(self.et, encoding="unicode", short_empty_elements=False)
@@ -266,11 +269,14 @@ class ValuePresentation:
 
 class Worker:
     
-    def __init__(self, id: int, lastname: str):
+    def __init__(self, id: int, lastname: str, firstname=None):
         self.id = f"WKR-{id}"
         self.lastname = lastname
+        self.firstname = firstname
         self.et = ET.Element("WKR", A=self.id, B=self.lastname)
 
+        if self.firstname:
+            self.et.set("C", self.firstname)
 
 class WorkerAllocation:
 
